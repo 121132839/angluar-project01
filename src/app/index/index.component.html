@@ -1,0 +1,13 @@
+<br>
+<button (click)='show=!show'>{{show?'hide':'show'}}</button>
+show={{show}}
+
+<div *ngIf='show'>文本</div>
+
+
+<label>
+  Name:
+  <input type="text" [formControl]="name">
+  name:{{name.value}}
+  <button (click)="updateName()">change</button>
+</label>
